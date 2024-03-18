@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 app.post("/bfhl", (req, res) => {
-  const info = req.body;
+  const info = req.body.data;
   const response = {
     is_success: true,
     user_id: "john_doe_17091999",
